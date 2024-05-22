@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*styling for bg img*/
+.bg2 {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../image/post12.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    
+}
+
+
+/* styling for media query for bg image in contact page  */
+
+@media(max-width:992px){
+    .bg2{
+        height: 70vh;   
+    }
+    
+   
+}
+
+.bggcontent{
+    text-align: center;
+    padding-top: 200px;
+
+}
+
+/* @media(max-width:992px){
+    .bggcontent{
+        padding-top: 200px;   
+    }
+    
+   
+} */
+
+/* STYLING FOR CONTACT FORM */
+
+.btn5{
+    background-color: rgb(7, 37, 52);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+.btn5 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.icons2 i {
+    padding-right: 20px;
+    font-size: 20px;
+    }

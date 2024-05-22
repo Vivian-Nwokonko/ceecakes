@@ -1,0 +1,515 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* styling of nav bar */
+.navbar {
+    z-index: 9999;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+
+/* .navbar{
+    background-color: rgb(110, 74, 74);
+} */
+
+/* styling for navbar background colour to change to black  which has a link on app.js */
+/* .add is a class name on javascript */
+.navbar.add{
+    background-color: rgb(5, 25, 34);
+}
+
+
+.navbar ul li {
+    padding-right: 30px;
+
+}
+
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    display: block;
+    transition: 1s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/* .navbar ul li a.active{
+    background-color: black;
+} */
+
+/*styling for animation*/
+
+.bg {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../image/post27.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-transform: uppercase;
+    animation-name: animatin;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animatin{
+
+    0%{
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../image/caker.jpg);
+    }    
+    30%{
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../image/cakey5.jpg);
+    }  
+
+    }
+
+/* styling for media query for bg image in home page  */
+
+@media(max-width:992px){
+    .bg{
+        height: 100vh;   
+    }  
+}
+
+
+
+/* styling of bgcontent */
+.bgcontent{
+    padding-top: 250px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+@media(max-width:992px){
+    .bgcontent{
+        padding-top: 150px;   
+    }
+    
+   
+}
+
+.bgcontent h1{
+font-size: 40px;
+color: white;
+}
+
+
+
+.bgcontent p{
+    padding: 20px 0px;
+    color: white;
+}
+
+
+
+.btn1 {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* styling of story */
+
+
+.story1{
+    text-align: center;
+}
+
+.story1 h1{
+    color: hotpink;
+    padding-bottom: 10px;
+}
+
+.story1 p{
+    padding-bottom: 20px;
+}
+
+.btn2 {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+.btn2 a {
+    text-decoration: none;
+    color: black;
+}
+
+/* styling for imaggg on discover our story */
+.imaggg:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+
+
+/* img{
+    width: 100%;
+    height: auto;
+} */
+
+/* @media(max-width:992px){
+    .imaggg{
+        height: 40vh;  
+        width: 60%; 
+    } */
+    
+   
+
+
+
+
+/* styling of valentine */
+
+.water {
+    position: relative;
+    width: 100%;
+  }
+  
+  .imaged {
+    display: block;
+    width: 100%;
+    height: 80vh;
+  }
+
+  @media(max-width:992px){
+    .imaged{
+        height: 40vh;  
+        
+    }
+    
+   
+}
+
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), hotpink);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .water:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  @media(max-width:992px){
+    .water:hover .overlay {
+        bottom: 0;
+        height: 40vh;
+      }
+    }
+
+
+    
+  .textty {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  @media(max-width:992px){
+    .water .textty{
+        font-size: 10px;
+        text-align: center;
+    
+      }
+      
+    }
+
+/* styling of happy faces */
+/* div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  } */
+  
+
+
+/* STYLING OF Services*/
+
+.standard { 
+    color: black;
+    margin: 30px 0px;
+    
+}
+
+.standard3{
+    color: black;
+}
+
+.standard2 {
+    background-color: whitesmoke;
+}
+
+.standard4 { 
+    color: black;
+    margin: 30px 0px;
+    
+}
+/* styling of our gallery */
+
+.gallery {
+    color: black;
+
+}
+
+.gallery2{
+    color:black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media(max-width:992px){
+
+    .gallery1 img{
+
+        height: 40vh;
+        width: 60%;
+    }    
+}
+
+
+
+.btn3 {
+    background-color:  rgb(7, 37, 52);;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 80px;
+}
+
+.btn3 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.chef2{
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+
+/* styling for contact page */
+.bg11 {
+    background-color: whitesmoke;
+}
+
+.bg11 h1{
+    padding-bottom: 40px;
+}
+
+/* styling of testimonial */
+
+.testimonials{
+    padding: 40px 0px;
+    background-color: whitesmoke;
+    text-align: center;
+    color: black;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+
+/* this line of code ie .border,  is used for creatig a line under the heading */
+.border{
+    width: 160px;
+    height: 5px;
+    color: black;
+    margin: 26px auto;
+    background-color: black;
+}
+
+
+.rowd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cold{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+.testimonial{
+    background-color: white;
+    padding: 30px;
+}
+
+
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{
+    text-transform: uppercase ;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.stars {
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width:960px){
+    .cold{
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .cold{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* styling for new arrivals */
+
+.new2{
+    color: black;
+}
+.new p{
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.new {
+    text-align: center;
+}
+
+
+/* styling for latest update */
+.blog{
+    background-color: whitesmoke;
+}
+
+
+
+.btn5{
+    background-color: rgb(7, 37, 52);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+.btn5 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+   /* styling of footer */
+   footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 25, 34);
+    flex-wrap: wrap;
+
+}
+
+footer ul li {
+    padding: 5px 0px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* STYLING FOR SUBSCRIBE */
+.subscribe form input{
+    border: none;
+    outline: none;
+}
+
+
+
+/* styling of footer icons*/
+    
+    .icons i {
+    color: white;
+    padding: 0px 10px;
+    }
+    

@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*styling for bg img*/
+.bg3 {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../image/post25.jpg );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    
+}/* styling for media query for bg image in about page  */
+
+@media(max-width:992px){
+    .bg3{
+        height: 70vh;   
+    }
+     
+}
+
+
+
+
+.bgg20content{
+    text-align: center;
+    padding-top: 200px;
+}
+
+/* styling of cake */
+.caker{
+    background-color: whitesmoke;
+}
+
+/* styling of real */
+
+
+.real {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../image/savour1.jpg );
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.real2{
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
