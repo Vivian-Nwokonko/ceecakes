@@ -1,52 +1,228 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /*styling for bg img*/
 .bg3 {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../image/post25.jpg );
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../image/post25.jpg );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
-    
-}/* styling for media query for bg image in about page  */
 
-@media(max-width:992px){
-    .bg3{
-        height: 70vh;   
+}
+
+/* styling for media query for bg image in about page  */
+
+@media(max-width:992px) {
+    .bg3 {
+        height: 70vh;
     }
-     
+
 }
 
 
-
-
-.bgg20content{
+.bgg20content {
     text-align: center;
     padding-top: 200px;
 }
 
-/* styling of cake */
-.caker{
-    background-color: whitesmoke;
+
+/* styling for bakery section */
+.bakery-section {
+    background-color: #fff8f5;
+    padding-top: 120px;
+    /* space from hero */
+    padding-bottom: 100px;
 }
 
-/* styling of real */
 
 
-.real {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../image/savour1.jpg );
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bakery-title {
+    color: #5a2a27;
+    font-size: 2.5rem;
 }
 
-.real2{
-    text-align: center;
-    color: white;
-    padding-top: 100px;
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #ff6b6b;
+    margin: 10px 0 20px;
+    border-radius: 5px;
 }
 
+.bakery-intro {
+    font-size: 1.2rem;
+    color: #d94f4f;
+    margin-bottom: 15px;
+}
+
+.bakery-text {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.bakery-section img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.bakery-section img:hover {
+    transform: scale(1.05);
+}
+
+
+/* styling of mission */
+
+.mission-section {
+    position: relative;
+    min-height: 60vh;
+    background: url('../image/savour1.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+/* Dark overlay for readability */
+.mission-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Keep content above overlay */
+.mission-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Text styling */
+.mission-title {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.mission-highlight {
+    font-size: 1.2rem;
+    color: #ffb3b3;
+}
+
+.mission-text {
+    color: #f1f1f1;
+    line-height: 1.7;
+}
+
+
+
+
+
+/* Chef Card */
+/* Divider line */
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #ff6b6b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.chef-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.chef-card img {
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Hover effect */
+.chef-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Text styling */
+.chef-card h5 {
+    font-weight: 600;
+    color: #5a2a27;
+}
+
+.chef-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+
+
+/* FAQ Section Styling */
+section {
+    background-color: #fff8f5;
+}
+
+h2 {
+    font-weight: 700;
+    color: #5a2a27;
+}
+
+.border {
+    width: 60px;
+    height: 3px;
+    background-color: #ff6b6b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Accordion Styling */
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button {
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #333;
+    padding: 18px;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #ffecea;
+    color: #d94f4f;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ff6b6b;
+    color: #fff;
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: #fff;
+    padding: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Remove default arrow and style a cleaner one */
+.accordion-button::after {
+    filter: brightness(0.5);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}

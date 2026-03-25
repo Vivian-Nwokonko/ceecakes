@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -20,7 +20,7 @@
 
 /* styling for navbar background colour to change to black  which has a link on app.js */
 /* .add is a class name on javascript */
-.navbar.add{
+.navbar.add {
     background-color: rgb(5, 25, 34);
 }
 
@@ -31,7 +31,7 @@
 }
 
 
-.navbar ul li::after{
+.navbar ul li::after {
     content: '';
     height: 2px;
     width: 0px;
@@ -40,7 +40,7 @@
     transition: 1s;
 }
 
-.navbar ul li:hover::after{
+.navbar ul li:hover::after {
     width: 100%;
 }
 
@@ -51,7 +51,7 @@
 /*styling for animation*/
 
 .bg {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../image/post27.jpg );
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../image/post27.jpg );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,74 +63,82 @@
     animation-delay: 3s;
 }
 
-@keyframes animatin{
+@keyframes animatin {
 
-    0%{
-        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../image/caker.jpg);
-    }    
-    30%{
-        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../image/cakey5.jpg);
-    }  
-
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../image/caker.jpg);
     }
+
+    30% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../image/cakey5.jpg);
+    }
+
+}
 
 /* styling for media query for bg image in home page  */
 
-@media(max-width:992px){
-    .bg{
-        height: 80vh;   
-    }  
+@media(max-width:992px) {
+    .bg {
+        height: 80vh;
+    }
 }
 
 
 
 /* styling of bgcontent */
-.bgcontent{
+.bgcontent {
     padding-top: 250px;
     padding-left: 50px;
     text-align: left;
 }
 
-@media(max-width:992px){
-    .bgcontent{
-        padding-top: 150px;   
+@media(max-width:992px) {
+    .bgcontent {
+        padding-top: 150px;
     }
-    
-   
+
+
 }
 
-.bgcontent h1{
-font-size: 40px;
-color: white;
+.bgcontent h1 {
+    font-size: 40px;
+    color: white;
 }
 
 
 
-.bgcontent p{
+.bgcontent p {
     padding: 20px 0px;
     color: white;
 }
 
 
 
-.btn1 {
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 10px 20px;
-}
-
-.btn1 a {
-    text-decoration: none;
+.hero-btn {
+    background-color: #ff6b6b;   /* brand color */
     color: white;
+    padding: 12px 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle depth for readability */
 }
 
+.hero-btn:hover {
+    background-color: #e05555;  /* slightly darker on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
 
 /* Floating WhatsApp Icon */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25D366; /* WhatsApp green */
+    background-color: #25D366;
+    /* WhatsApp green */
     color: white;
     border-radius: 50%;
     width: 60px;
@@ -138,14 +146,14 @@ color: white;
     text-align: center;
     font-size: 30px;
     line-height: 60px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -153,53 +161,93 @@ color: white;
 /* styling of story */
 
 
-.story1{
+.story1 {
     text-align: center;
 }
 
-.story1 h1{
-    color: hotpink;
+.story1 h1 {
+    color: black;
     padding-bottom: 10px;
 }
 
-.story1 p{
+.story1 p {
     padding-bottom: 20px;
 }
 
+/* btn used here and in blog page */
 .btn2 {
+    display: inline-block;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #ff6b6b;  /* brand color border */
     padding: 10px 20px;
+    color: #ff6b6b;              /* brand color text */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.btn2 a {
-    text-decoration: none;
-    color: black;
+.btn2:hover {
+    background-color: #ff6b6b;  /* brand color fills button */
+    color: white;               /* text turns white */
+    transform: scale(1.05);     /* subtle pop effect */
 }
 
 /* styling for imaggg on discover our story */
 .imaggg:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s;
-  
+
     /* When the animation is finished, start again */
     animation-iteration-count: infinite;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-  
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
 
 
 /* img{
@@ -212,8 +260,8 @@ color: white;
         height: 40vh;  
         width: 60%; 
     } */
-    
-   
+
+
 
 
 
@@ -223,25 +271,25 @@ color: white;
 .water {
     position: relative;
     width: 100%;
-  }
-  
-  .imaged {
+}
+
+.imaged {
     display: block;
     width: 100%;
     height: 80vh;
-  }
-
-  @media(max-width:992px){
-    .imaged{
-        height: 40vh;  
-        
-    }
-    
-   
 }
 
-  
-  .overlay {
+@media(max-width:992px) {
+    .imaged {
+        height: 40vh;
+
+    }
+
+
+}
+
+
+.overlay {
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -249,25 +297,25 @@ color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.6), hotpink);
     overflow: hidden;
     width: 100%;
-    height:0;
+    height: 0;
     transition: .5s ease;
-  }
-  
-  .water:hover .overlay {
+}
+
+.water:hover .overlay {
     bottom: 0;
     height: 100%;
-  }
-  
-  @media(max-width:992px){
+}
+
+@media(max-width:992px) {
     .water:hover .overlay {
         bottom: 0;
         height: 40vh;
-      }
     }
+}
 
 
-    
-  .textty {
+
+.textty {
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -276,17 +324,17 @@ color: white;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
 
-  @media(max-width:992px){
-    .water .textty{
+@media(max-width:992px) {
+    .water .textty {
         font-size: 10px;
         text-align: center;
-    
-      }
-      
+
     }
+
+}
 
 /* styling of happy faces */
 /* div.scroll-container {
@@ -299,18 +347,18 @@ color: white;
   div.scroll-container img {
     padding: 10px;
   } */
-  
+
 
 
 /* STYLING OF Services*/
 
-.standard { 
+.standard {
     color: black;
     margin: 30px 0px;
-    
+
 }
 
-.standard3{
+.standard3 {
     color: black;
 }
 
@@ -318,11 +366,12 @@ color: white;
     background-color: whitesmoke;
 }
 
-.standard4 { 
+.standard4 {
     color: black;
     margin: 30px 0px;
-    
+
 }
+
 /* styling of our gallery */
 
 .gallery {
@@ -330,8 +379,8 @@ color: white;
 
 }
 
-.gallery2{
-    color:black;
+.gallery2 {
+    color: black;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -339,32 +388,108 @@ color: white;
 
 
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-    .gallery1 img{
+    .gallery1 img {
 
         height: 40vh;
         width: 60%;
-    }    
+    }
 }
 
 
 
-.btn3 {
-    background-color:  rgb(7, 37, 52);;
-    border: none;
-    padding: 10px 20px;
-    margin-bottom: 80px;
+/* Section Header */
+.gallery-section {
+    background-color: #f9f9f9;
 }
 
-.btn3 a {
+.gallery-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.gallery-section p.text-muted {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background-color: #ff6b6b;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+/* Cake Card */
+.cake-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.cake-card img.card-img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.cake-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.cake-card:hover img.card-img {
+    transform: scale(1.05);
+}
+
+/* Cake Name */
+.cake-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* SHOP Button */
+.btn-shop {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 12px;
     text-decoration: none;
-    color: white;
+    transition: background 0.3s, transform 0.2s;
 }
 
+.btn-shop:hover {
+    background-color: #e05555;
+    transform: scale(1.05);
+}
 
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .gallery-title {
+        font-size: 2rem;
+    }
+}
 
-.chef2{
+@media (max-width: 575px) {
+    .gallery-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* chef styling */
+.chef2 {
     font-weight: bold;
     padding-top: 20px;
 }
@@ -375,20 +500,20 @@ color: white;
     background-color: whitesmoke;
 }
 
-.bg11 h1{
+.bg11 h1 {
     padding-bottom: 40px;
 }
 
 /* styling of testimonial */
 
-.testimonials{
+.testimonials {
     padding: 40px 0px;
     background-color: whitesmoke;
     text-align: center;
     color: black;
 }
 
-.inner{
+.inner {
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
@@ -397,22 +522,22 @@ color: white;
 
 
 /* this line of code ie .border,  is used for creatig a line under the heading */
-.border{
+.border {
     width: 160px;
     height: 5px;
     color: black;
     margin: 26px auto;
-    background-color: black;
+    background-color: #ff6b6b;
 }
 
 
-.rowd{
+.rowd {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.cold{
+.cold {
     flex: 33.33%;
     max-width: 33.33%;
     box-sizing: border-box;
@@ -420,20 +545,20 @@ color: white;
 }
 
 
-.testimonial{
+.testimonial {
     background-color: white;
     padding: 30px;
 }
 
 
-.testimonial img{
+.testimonial img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
-.name{
-    text-transform: uppercase ;
+.name {
+    text-transform: uppercase;
     font-size: 20px;
     margin: 20px 0;
 }
@@ -445,16 +570,16 @@ color: white;
 
 
 
-@media screen and (max-width:960px){
-    .cold{
+@media screen and (max-width:960px) {
+    .cold {
         flex: 100%;
         max-width: 80%;
     }
 }
 
 
-@media screen and (max-width:600px){
-    .cold{
+@media screen and (max-width:600px) {
+    .cold {
         flex: 100%;
         max-width: 100%;
     }
@@ -463,10 +588,11 @@ color: white;
 
 /* styling for new arrivals */
 
-.new2{
+.new2 {
     color: black;
 }
-.new p{
+
+.new p {
     font-weight: bold;
     padding: 20px 0px;
 }
@@ -476,19 +602,40 @@ color: white;
 }
 
 
+.btn-shop {
+    display: inline-block;
+    background-color: #ff6b6b;      /* brand color */
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-shop:hover {
+    background-color: #e05555;      /* slightly darker on hover */
+    transform: scale(1.05);         /* subtle zoom effect */
+    text-decoration: none;
+}
+
+
+
 /* styling for latest update */
-.blog{
+.blog {
     background-color: whitesmoke;
 }
 
 
 
-.btn5{
-    background-color: rgb(7, 37, 52);
+.btn5 {
+    background-color: #e05555;;
     border: none;
     padding: 10px 20px;
     margin-top: 20px;
     margin-left: 40%;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .btn5 a {
@@ -498,8 +645,28 @@ color: white;
 
 
 
-   /* styling of footer */
-   footer {
+.btn5 a :hover {
+    background-color: #e05555;
+    /* slightly darker on hover */
+    transform: scale(1.05);
+    /* subtle zoom effect */
+}
+
+/* styling for blog read more links */
+
+.blog-readmore {
+    color: #ff6b6b;               /* brand color */
+    text-decoration: none;         /* removes underline */
+    transition: color 0.3s, transform 0.2s;
+}
+
+.blog-readmore:hover {
+    color: #e05555;               /* slightly darker on hover */
+    transform: translateX(5px);   /* subtle arrow movement */
+}
+
+/* styling of footer */
+footer {
     display: flex;
     justify-content: space-between;
     background-color: rgb(5, 25, 34);
@@ -522,18 +689,49 @@ footer a {
 
 
 
+
 /* STYLING FOR SUBSCRIBE */
-.subscribe form input{
+.subscribe form input {
     border: none;
     outline: none;
 }
 
 
+.btn-subscribe {
+    background-color: #ff6b6b;
+    /* CeeCakes brand color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-subscribe:hover {
+    background-color: #e05555;
+    /* slightly darker on hover */
+    transform: scale(1.05);
+    /* subtle zoom effect */
+}
+
 
 /* styling of footer icons*/
-    
-    .icons i {
-    color: white;
-    padding: 0px 10px;
-    }
-    
+
+.footer-icons a {
+    color: white;                   /* default color */
+    font-size: 1.5rem;              /* same as fs-4 */
+    margin-right: 15px;             /* spacing between icons */
+    transition: color 0.3s, transform 0.2s;
+    display: inline-block;           /* ensures transform works */
+}
+
+.footer-icons a:last-child {
+    margin-right: 0;                /* remove margin from last icon */
+}
+
+.footer-icons a:hover {
+    color: #ff6b6b;                 /* brand color on hover */
+    transform: scale(1.2);          /* subtle zoom effect */
+    cursor: pointer;
+}

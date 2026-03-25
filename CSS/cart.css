@@ -38,9 +38,28 @@
     
    
 } */
+.btn-subscribe a{
+    text-decoration: none;
+    color: white;
+}
+.btn-subscribe {
+    background-color: #ff6b6b;
+    /* CeeCakes brand color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s;
+}
 
-
-.btn20{
+.btn-subscribe:hover {
+    background-color: #e05555;
+    /* slightly darker on hover */
+    transform: scale(1.05);
+    /* subtle zoom effect */
+}
+/* .btn20{
     background-color: rgb(7, 37, 52);
     border: none;
     padding: 10px 20px;
@@ -51,4 +70,4 @@
 .btn20 a {
     text-decoration: none;
     color: white;
-}
+} */
